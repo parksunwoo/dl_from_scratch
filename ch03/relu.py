@@ -20,3 +20,5 @@ print(np.ndim(B))
 print(B.shape)
 print(B.shape[0])
 
+
+
