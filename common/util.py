@@ -8,7 +8,7 @@ def smooth_curve(x):
     y = np.convolve(w/w.sum(), s, mode="valid")
     return y[5:len(y)-5]
 
-def suhffle_dataset(x, t):
+def shuffle_dataset(x, t):
 
     permutation = np.random.permutation(x.shape[0])
     x = x[permutation,:] if x.ndim == 2 else x[permutation,:,:,:]
